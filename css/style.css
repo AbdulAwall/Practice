@@ -1,0 +1,122 @@
+header img {
+    width: 50px;
+
+}
+#top {
+    display: flex;
+}
+#top img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+button {
+    width: 150px;
+    height: 60px;
+    background-color:#921515;
+    color: aqua;
+    font-size: large;
+}
+button:hover{
+    background-color: rgb(217, 165, 165);
+    color: aliceblue;
+}
+
+.lss{
+    width: 350px;
+    height: 300px;
+    border: 3px solid blue;
+}
+.lss li{
+    list-style-type: none;
+    color:#070000;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+  
+    background-color: rgba(0, 0, 255, 0.075);
+    border: 2px solid white;
+    display: inline-block;
+   text-align: center;
+}
+
+
+.header_1 .hnav, form{
+    display: inline;
+    max-width: fit-content;
+    max-height: fit-content;
+   
+    padding:0px;
+    margin: 0px;
+    border-radius: 5px;
+
+ 
+}
+
+
+.hnav li {
+    list-style-type: none -10px;
+    color:#ffffff;
+    width: 100px;;
+    height: 30px;
+    padding: 7px;
+    background:#921515;
+    border: 2px solid white;
+    display: inline-block;
+   text-align: center;
+   font-weight: bold;
+    
+}
+
+.hnav li:hover {
+    background-color: #5e310496;
+}
+
+
+#search {
+    height: 35px;
+    padding: 7px;
+    display: inline-block;
+   
+}
+
+main {
+  display: flex;
+
+}
+
+
+@media screen and (min-width: 600px){
+    article, aside{
+ 
+        width:100% ;
+        float: left;
+       
+    }
+}
+
+
+aside li{ 
+    list-style-type: none;
+    color:#070000;
+    border: 2px solid white;
+
+}
+.footer{
+    background-color: #921515;
+    padding: auto;
+   }
+   .footer p {
+       padding: 15px;
+       color: #ffffff;
+       font: 1em sans-serif;
+}
+
+
+/*Contact Page:*/
+
+.positioned {
+    position: sticky;
+ 
+   
+  }

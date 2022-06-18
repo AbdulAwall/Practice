@@ -1,0 +1,162 @@
+body{
+ 
+  margin: 0px;
+  padding: 0px auto;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: #747474;
+  color: #ffffff;
+}
+.header img {
+  width: 60px;
+  float: left;
+}
+
+.footer {
+  background: #747474;
+  color: #ffffff;
+}
+
+.main {
+  text-align: left;
+  background: rgb(185, 223, 236);
+}
+
+.aside-1 {
+  background: #4d97becb;
+}
+
+.aside-2 {
+  background: #5b76c8d4;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em; 
+}
+
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  background: deepskyblue;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+
+
+.navigation a:hover {
+  background: #1565C0;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.ab-main {
+  display: flex;  
+  flex-flow: row wrap;
+  background-color: aquamarine;
+
+}
+
+.ab-main ul{
+  flex:1;
+}
+
+.ab-nav {
+  list-style: none;
+  background-color: #747474;
+  flex:1;
+}
+.ab-nav li {
+  display: block;
+ 
+}
+
+.ab-nav li:hovar{
+  background-color: red;
+}
+.ab-main section, article {
+  
+  flex: 2 2 ;
+  background-color: darkcyan;
+  box-shadow: rgba(255, 255, 255,0.3) 2px 2px 5px;
+  display: inline-block;
+}
+
+.con-main {
+  background-color: black;
+  color: #ffffff;
+  
+}
+.con-address{
+  background-color: #747474;
+  
+  font-size: 1.5rem;
+  float: left;
+  
+  
+}
+
+.con-email{
+  background-color: #747474;
+  
+  font-size: 1.5rem;
+  float: left;
+}
